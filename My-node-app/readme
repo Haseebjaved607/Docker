@@ -1,0 +1,15 @@
+This is to copy single file 
+COPY index.js /home/app/index.js
+
+for multiple files use
+
+COPY. 
+
+but 
+add dockergitignore file to prevent unnecessary file to upload 
+
+
+docker build -t your_image_name .
+docker run -p 9000:9000 your_image_name
+docker push hasiimughal41/mynodeapp
+This name is typically formatted as username/repository_name 
